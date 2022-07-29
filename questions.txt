@@ -1,0 +1,3 @@
+write a c program to read n numbers then parent process display the number and child process the sum of n numbers
+write a c program to read n numbers parent process display the sum of odd numbers and child display sum of even numbers
+create a process tree with same parent and multiple child
