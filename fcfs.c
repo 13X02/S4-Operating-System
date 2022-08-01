@@ -5,13 +5,11 @@ int main(){
     scanf("%d",&n);
     int bt[n],wt[n],tat[n],twt,ttat;
     printf("Enter the burst time of processes");
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         scanf("%d",&bt[i]);
     }
     wt[0]=0;
-    for (int i = 1; i < n; i++)
-    {
+    for (int i = 1; i < n; i++){
         wt[i] = wt[i-1]+bt[i-1];
     }
 

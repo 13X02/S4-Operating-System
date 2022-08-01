@@ -12,7 +12,7 @@ int main(){
         printf("does not exit");
         exit(0);
     }
-    while (dptr=readdir(dirp))
+    while (dptr==readdir(dirp))
     {
         printf("%s\n",dptr->d_name);
     }

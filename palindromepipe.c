@@ -15,7 +15,7 @@ int main(){
 	if (f==0)
 	{
 		int j=0;
-		read(pipefds[0],readmessage,sizeof(readmessage));
+		read(pipefds[0],readmessage,sizeof(pipefds[0]));
         char rev[strlen(readmessage)];
         int l=strlen(readmessage)-1;
 		for(int i=l;i>=0;i--){
@@ -36,7 +36,7 @@ int main(){
 	}else if(f!=0){
 		printf("enter string");
         scanf("%s",writemessage);
-    	write(pipefds[1],writemessage,strlen(writemessage)+1);
+    	write(pipefds[1],writemessage,strlen(writemessage));
 
 
 	}
