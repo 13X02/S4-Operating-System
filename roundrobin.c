@@ -33,7 +33,7 @@ int main(){
             ct=ct+t;
             p[i].pct=ct;
             i=(i+1)%n;
-        }else if(p[i].bt<t){
+        }else {
             
             p[i].wt=p[i].wt+(ct-p[i].pct);
             ct=ct+p[i].bt;
@@ -41,20 +41,10 @@ int main(){
             p[i].bt=0;
             count++;
             i=(i+1)%n;
-        }else if(p[i].bt==t){
-            p[i].bt=p[i].bt-t;
-            p[i].wt=p[i].wt+(ct-p[i].pct);
-            ct=ct+t;
-            p[i].pct=ct;
-            count++;
-            i=(i+1)%n;
-        }
-        
+        }    
         if(count==n){
             break;
-        }
-        
-        
+        }    
     }
     int twt=0;
     int ttat=0;
