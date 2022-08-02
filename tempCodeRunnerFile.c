@@ -1,0 +1,1 @@
+p[i].wt+(ct-p[i].pct)
