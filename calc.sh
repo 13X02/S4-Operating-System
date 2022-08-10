@@ -25,7 +25,7 @@ fi
 then
 echo "Not possible"
 else
-s=`echo "value=4;$a%$b" | bc`
+s=`echo "scale=4;$a%$b" | bc`
 echo "Result $s"
 fi
 ;;

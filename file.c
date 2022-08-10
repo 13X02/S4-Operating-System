@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <dirent.h>
-  
 int main(void)
 {
     struct dirent *de; 

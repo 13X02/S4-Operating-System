@@ -12,7 +12,6 @@ int main(){
     for (int i = 1; i < n; i++){
         wt[i] = wt[i-1]+bt[i-1];
     }
-
     twt=0;
     ttat=0;
     for (int i = 0; i < n; i++)
@@ -23,7 +22,5 @@ int main(){
     }
     printf("Average waiting time is %.2f",(float)twt/n);
     printf("\nAverage turnaround time is %.2f",(float)ttat/n);
-    return 0;
-    
-    
+    return 0;    
 }

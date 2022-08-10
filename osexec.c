@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<unistd.h>
-int main(){
+void main(){
     printf(" 1\n");
     int pid=fork();
     if(pid==0){
@@ -8,5 +8,5 @@ int main(){
     }else if(pid>0){
         execl("/bin/pwd","pwd",NULL);
     }
-    return 0;
+    
 }

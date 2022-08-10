@@ -3,9 +3,9 @@
 int main(){
     int pid=fork();
     if(pid==0){
-        execl("/home/cek/S4CS02/hi","./hi",NULL);
+        execl("/Users/home/repos/S4-Operating-System/hi","./hi",NULL);
     }else if(pid>0){
-        execl("/home/cek/S4CS02/hello","./hello",NULL);
+        execl("/Users/home/repos/S4-Operating-System/hello","./hello",NULL);
     }
     return 0;
 }

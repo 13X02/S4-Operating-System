@@ -6,7 +6,7 @@ struct process{
     int cbt;
 };
 int main(){
-    int n,t,j=0,ct=0;
+    int n,t,ct=0;
     printf("Enter the number of process");
     scanf("%d",&n);
     struct process p[n];
@@ -21,7 +21,7 @@ int main(){
     printf("Enter time quanta");
     scanf("%d",&t);
     int i=0,count=0;
-    while (1)
+    while (count!=n)
     {
         if(p[i].bt==0){
             i=(i+1)%n;
@@ -41,10 +41,7 @@ int main(){
             p[i].bt=0;
             count++;
             i=(i+1)%n;
-        }    
-        if(count==n){
-            break;
-        }    
+        }        
     }
     int twt=0;
     int ttat=0;

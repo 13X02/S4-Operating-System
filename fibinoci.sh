@@ -1,10 +1,10 @@
 echo " Enter No of terms"
 read n
-f1=1
+f1=0
 f2=1
 echo "fibinocci series"
 echo -n " $f1  $f2 "
-while [ $n -ne 0 ] 
+while [ $n -ne 2 ] 
 do
 f=`expr $f1 + $f2`
 echo -n " $f "
