@@ -25,10 +25,8 @@ int main(){
             {
                 sl=req[i];
                 prediff=diff;
-            }
-            
-        }
-        
+            }    
+        }    
     }
     printf("%d",sl);
     tst=((s-1)-req[0])+(s-1)+sl;
