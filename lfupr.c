@@ -16,7 +16,7 @@ int main(){
     for (int i = 0; i < m; i++)
     {
         pf[i]=-1;
-        p[i]=i+1;
+        p[i]=0;
     }
     for (int i = 0; i < n; i++)
     {
@@ -26,9 +26,7 @@ int main(){
             if (pr[i]==pf[j])
             {
                 hit=1;
-                p[j]=n;
-            }else{
-                p[j]--;
+                p[j]++;
             }
             
         }

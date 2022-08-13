@@ -28,7 +28,6 @@ int main(){
             }    
         }    
     }
-    printf("%d",sl);
     tst=((s-1)-req[0])+(s-1)+sl;
     printf("Total seek time is %d",tst);
     return 0;

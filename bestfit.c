@@ -20,7 +20,6 @@ int main(){
         }
         
     }
-    printf("%d",l);
     printf("Enter no of processes");
     scanf("%d",&n);
     int p[n];
@@ -37,11 +36,16 @@ int main(){
         diff=l;
         for (int j = 0; j < m; j++)
         {
-            if (diff>(mb[j]-p[i]))
+            if (p[i]<=mb[j])
+            {
+                if (diff>(mb[j]-p[i]))
             {
                 diff=mb[j]-p[i];
                 loc=j;
             }
+            }
+            
+            
             if(j==m-1){
                 if (diff!=l)
                 {

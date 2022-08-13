@@ -12,7 +12,7 @@ int main(){
     printf("Enter no of processes");
     scanf("%d",&n);
     int p[n];
-    printf("Enter size of memory blocks");
+    printf("Enter size of process");
     for (int i = 0; i < n; i++)
     {
         scanf("%d",&p[i]);
