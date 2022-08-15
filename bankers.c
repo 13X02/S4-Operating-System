@@ -1,8 +1,8 @@
-// Banker's Algorithm
+
 #include <stdio.h>
 int main()
 {
-	// P0, P1, P2, P3, P4 are the Process names here
+
 
 	int n, m, i, j, k;
     printf("Enter no of processes and resources");
