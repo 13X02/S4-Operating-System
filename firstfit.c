@@ -17,9 +17,10 @@ int main(){
     {
         scanf("%d",&p[i]);
     }
-    int flag=0;
+    
     for (int i = 0; i < n; i++)
     {
+        int flag=0;
         for (int j = 0; j < m; j++)
         {
             if (p[i]<=mb[j])
@@ -36,10 +37,7 @@ int main(){
         {
             printf("\nprocess %d can't be allocated",i);
             
-        }else{
-            flag=0;
         }
-        
         
     }
     return 0;

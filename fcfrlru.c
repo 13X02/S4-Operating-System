@@ -11,7 +11,7 @@ int main(){
     }
     int front=-1;
     int rear=-1;
-    printf("Enter no page frame");
+    printf("Enter no of page frame");
     scanf("%d",&m);
     int pf[m];
     for (int i = 0; i < m; i++)

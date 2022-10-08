@@ -1,9 +1,6 @@
-
 #include <stdio.h>
 int main()
 {
-
-
 	int n, m, i, j, k;
     printf("Enter no of processes and resources");
     scanf("%d%d",&n,&m);
@@ -42,7 +39,6 @@ int main()
 	for (k = 0; k < n; k++) {
 		for (i = 0; i < n; i++) {
 			if (f[i] == 0) {
-
 				int flag = 0;
 				for (j = 0; j < m; j++) {
 					if (need[i][j] > avail[j]){
@@ -50,7 +46,6 @@ int main()
 						break;
 					}
 				}
-
 				if (flag == 0) {
 					ans[ind++] = i;
 					for (y = 0; y < m; y++)
@@ -60,19 +55,16 @@ int main()
 			}
 		}
 	}
-
 	int flag = 1;
-	
 	for(int i=0;i<n;i++)
 	{
-	if(f[i]==0)
+		if(f[i]==0)
 	{
 		flag=0;
 		printf("The following system is not safe");
 		break;
 	}
 	}
-	
 	if(flag==1)
 	{
 	printf("Following is the SAFE Sequence\n");
@@ -80,8 +72,5 @@ int main()
 		printf(" P%d ->", ans[i]);
 	printf(" P%d", ans[n - 1]);
 	}
-	
-
 	return (0);
-
 }
