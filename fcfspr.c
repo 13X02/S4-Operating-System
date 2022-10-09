@@ -32,7 +32,7 @@ int main(){
         }
         if (hit==0)
         {
-            if (front==(rear+1)%m)
+            if(front==(rear+1)%m)
             {
                 pf[front]=pr[i];
                 rear=front;
@@ -43,7 +43,8 @@ int main(){
 		        }
 		        else{
 			        rear = (rear + 1) % m;
-                }pf[rear]=pr[i];
+                }
+                pf[rear]=pr[i];
 	        }
             miss++;
         }

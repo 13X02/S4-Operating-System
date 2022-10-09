@@ -21,7 +21,7 @@ int main(){
 			printf("odd");
 		}
 		
-	}else if(f!=0){
+	}else if(f>0){
 		printf("enter number");
 		scanf("%d",&writemessage);
 		write(pipefds[1],&writemessage,sizeof(writemessage));

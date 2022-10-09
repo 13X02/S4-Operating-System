@@ -14,12 +14,17 @@ int main(){
     }
     twt=0;
     ttat=0;
+    printf("---------------------------------------\n");
+    printf("| Process | waiting time |   ta time  |\n");
     for (int i = 0; i < n; i++)
     {
         tat[i] = wt[i]+bt[i];
         twt += wt[i];
         ttat += tat[i];
+        printf("---------------------------------------\n");
+        printf("|    %d    |     %d        |    %d       |\n",i,wt[i],tat[i]);
     }
+    printf("---------------------------------------\n");
     printf("Average waiting time is %.2f",(float)twt/n);
     printf("\nAverage turnaround time is %.2f",(float)ttat/n);
     return 0;    

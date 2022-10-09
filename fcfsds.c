@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     int n,diff,tst=0;
     printf("enter the no of request");
@@ -10,12 +11,7 @@ int main(){
     for (int i = 1; i <= n; i++)
     {
         scanf("%d",&req[i]);
-        if (req[i]<req[i-1])
-        {
-            diff=req[i-1]-req[i];
-        }else{
-            diff=req[i]-req[i-1];
-        }
+        diff = abs(req[i]-req[i-1]);
         tst+=diff;
         
     }
