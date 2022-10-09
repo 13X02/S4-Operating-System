@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main(){
-    int flag=0;
     int n,s,diff,tst=0;
     printf("Enter size of memory");
     scanf("%d",&s);
@@ -14,7 +13,7 @@ int main(){
     {
         scanf("%d",&req[i]);
     }
-    int small =req[1];
+    int small = req[1];
     for (int i = 2; i <= n; i++)
     {
         if (small>req[i])

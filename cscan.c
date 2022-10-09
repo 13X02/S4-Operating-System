@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main(){
-    int flag=0;
     int n,s,diff,tst=0;
     printf("Enter size of memory");
     scanf("%d",&s);
