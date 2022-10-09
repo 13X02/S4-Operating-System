@@ -39,13 +39,11 @@ int main(){
             if (p[i]<=mb[j])
             {
                 if (diff>(mb[j]-p[i]))
-            {
+                {
                 diff=mb[j]-p[i];
                 loc=j;
+                }
             }
-            }
-            
-            
             if(j==m-1){
                 if (diff!=l)
                 {
