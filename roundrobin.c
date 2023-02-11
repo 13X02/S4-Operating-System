@@ -33,7 +33,7 @@ int main(){
             ct=ct+t;
             p[i].pct=ct;
             i=(i+1)%n;
-        }else{
+        }else if(p[i].bt<=t && p[i].bt!=0){
             
             p[i].wt=p[i].wt+(ct-p[i].pct);
             ct=ct+p[i].bt;
