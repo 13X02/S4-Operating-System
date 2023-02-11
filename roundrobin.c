@@ -26,14 +26,14 @@ int main(){
         if(p[i].bt==0){
             i=(i+1)%n;
         }
-        if (p[i].bt>t)
+        else if (p[i].bt>t)
         {
             p[i].bt=p[i].bt-t;
             p[i].wt=p[i].wt+(ct-p[i].pct);
             ct=ct+t;
             p[i].pct=ct;
             i=(i+1)%n;
-        }else if(p[i].bt<=t && p[i].bt!=0){
+        }else{
             
             p[i].wt=p[i].wt+(ct-p[i].pct);
             ct=ct+p[i].bt;
